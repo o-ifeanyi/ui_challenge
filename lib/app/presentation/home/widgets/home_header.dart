@@ -176,7 +176,7 @@ class _HomeHeaderState extends State<HomeHeader> {
                 child: OfferItem(
                   title: 'RENT',
                   count: 2212,
-                  color: flexSchemeLight.background,
+                  color: flexSchemeLight.surface,
                   textColor: context.colorScheme.secondary,
                   borderRadius: BorderRadius.circular(20),
                 ),

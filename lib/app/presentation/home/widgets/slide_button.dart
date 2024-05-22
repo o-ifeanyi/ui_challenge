@@ -57,7 +57,7 @@ class SliderButtonState extends State<SliderButton> {
       width: _animateButton ? Config.width * 0.92 : Config.w(40),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Config.radius32),
-        color: context.colorScheme.background.withOpacity(0.7),
+        color: context.colorScheme.surface.withOpacity(0.7),
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.all(Config.radius32),
@@ -88,7 +88,7 @@ class SliderButtonState extends State<SliderButton> {
                         : constraints.maxWidth - Config.w(40),
                     child: CircleAvatar(
                       radius: Config.h(20),
-                      backgroundColor: context.colorScheme.background,
+                      backgroundColor: context.colorScheme.surface,
                       child: Icon(
                         AppIcons.arrowRight,
                         size: 16,

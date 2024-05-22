@@ -86,7 +86,7 @@ class _OfferItemState extends State<OfferItem>
             Text(
               widget.title,
               style: context.textTheme.bodyMedium?.copyWith(
-                color: widget.textColor ?? flexSchemeLight.background,
+                color: widget.textColor ?? flexSchemeLight.surface,
               ),
             ),
             Config.vBox20,
@@ -97,14 +97,14 @@ class _OfferItemState extends State<OfferItem>
                     '${_animation.value}',
                     style: context.textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
-                      color: widget.textColor ?? flexSchemeLight.background,
+                      color: widget.textColor ?? flexSchemeLight.surface,
                     ),
                   );
                 }),
             Text(
               'offers',
               style: context.textTheme.bodySmall?.copyWith(
-                color: widget.textColor ?? flexSchemeLight.background,
+                color: widget.textColor ?? flexSchemeLight.surface,
               ),
             ),
           ],

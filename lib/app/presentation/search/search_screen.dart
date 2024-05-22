@@ -45,21 +45,21 @@ class _SearchScreenState extends State<SearchScreen> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.all(Config.radius32),
                           child: TextField(
-                            style: context.textTheme.bodySmall?.copyWith(
-                                color: context.colorScheme.background),
+                            style: context.textTheme.bodySmall
+                                ?.copyWith(color: context.colorScheme.surface),
                             decoration: InputDecoration(
                               contentPadding: Config.fromLTRB(0, 15, 0, 0),
                               prefixIcon: Icon(
                                 AppIcons.search,
-                                color: context.colorScheme.background,
+                                color: context.colorScheme.surface,
                               ),
                               hintText: 'Search Pitsburg',
                               hintStyle: context.textTheme.bodySmall?.copyWith(
-                                  color: context.colorScheme.background),
+                                  color: context.colorScheme.surface),
                               border: InputBorder.none,
                               enabledBorder: InputBorder.none,
                               focusedBorder: InputBorder.none,
-                              fillColor: context.colorScheme.onBackground,
+                              fillColor: context.colorScheme.onSurfaceVariant,
                             ),
                           ),
                         ),
@@ -70,11 +70,11 @@ class _SearchScreenState extends State<SearchScreen> {
                       duration: Config.duration300,
                       scale: _animateScale ? 1 : 0,
                       child: CircleAvatar(
-                        backgroundColor: context.colorScheme.onBackground,
+                        backgroundColor: context.colorScheme.onSurfaceVariant,
                         child: Icon(
                           AppIcons.filter,
                           size: 20,
-                          color: context.colorScheme.background,
+                          color: context.colorScheme.surface,
                         ),
                       ),
                     ),

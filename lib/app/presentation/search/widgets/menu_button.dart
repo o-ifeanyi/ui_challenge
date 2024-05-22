@@ -13,8 +13,8 @@ class MenuButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return PopupMenuButton(
       padding: const EdgeInsets.all(0),
-      color: context.colorScheme.background,
-      surfaceTintColor: context.colorScheme.background,
+      color: context.colorScheme.surface,
+      surfaceTintColor: context.colorScheme.surface,
       icon: CircleAvatar(
         backgroundColor: context.colorScheme.outline.withOpacity(0.5),
         child: Icon(

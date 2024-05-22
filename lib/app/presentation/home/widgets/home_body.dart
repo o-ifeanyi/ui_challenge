@@ -36,7 +36,7 @@ class _HomeBodyState extends State<HomeBody> {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.vertical(top: Config.radius24),
-          color: context.colorScheme.background,
+          color: context.colorScheme.surface,
         ),
         padding: Config.fromLTRB(6, 8, 6, 0),
         child: CustomScrollView(

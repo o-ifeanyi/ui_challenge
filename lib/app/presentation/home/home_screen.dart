@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
           stops: const [0.2, 1.0],
           colors: [
             context.theme.scaffoldBackgroundColor,
-            context.colorScheme.surfaceVariant,
+            context.colorScheme.surfaceContainerHighest,
           ],
         ),
       ),

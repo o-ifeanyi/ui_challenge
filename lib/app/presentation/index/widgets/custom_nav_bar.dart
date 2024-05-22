@@ -42,7 +42,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
       child: SafeArea(
         child: Material(
           shape: const StadiumBorder(),
-          color: flexSchemeDark.surfaceVariant,
+          color: flexSchemeDark.surfaceContainer,
           child: Padding(
             padding: Config.all(6),
             child: Row(
@@ -50,7 +50,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
               mainAxisSize: MainAxisSize.min,
               children: AppConstants.navItems.map((item) {
                 final selected = item.index == widget.activeIndex;
-                return InkWell(
+                return GestureDetector(
                   onTap: () async {
                     widget.controller.jumpToPage(item.index);
                     widget.onPageChanged.call(item.index);
@@ -63,7 +63,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
                       backgroundColor: selected
                           ? context.colorScheme.primary
                           : flexSchemeDark.shadow,
-                      foregroundColor: flexSchemeLight.background,
+                      foregroundColor: flexSchemeLight.surface,
                       radius: selected ? Config.w(24) : Config.w(20),
                       child: Padding(
                         // filled search icon displaces for some reason
